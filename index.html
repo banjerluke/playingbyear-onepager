@@ -22,13 +22,13 @@
 <!-- Skills and interest section -->
   <div class="container">
 
-    <div class="sections">
+    <div class="sections" style="flex-basis: 60%;">
       <h2 class="section-title">Products</h2>
 
       <div class="list-card">
         <div>
           <h3>Strum Machine</h3>
-          <span>Customizable backing tracks made from real instruments.</span>
+          <span>Play along with customizable backing tracks, generated from real instrument sounds. Practice any song, in any key, at any speed. </span>
           <p><a href="https://strummachine.com/">Learn more</a></p>
         </div>
       </div>
@@ -37,27 +37,27 @@
     </div>
     <div class="sections">
         <h2 class="section-title">Services</h2>
-        
-        <div class="list-card" style="opacity:0.6;">
-          <div>
-            <h3>Online business operations</h3>
-            <span>Closed to new clients</span>
-          </div>
-        </div>	
 
         <div class="list-card" style="opacity:0.6;">
           <div>
             <h3>Private music instruction</h3>
             <span>Closed to new students</span>
           </div>
-        </div>		
+        </div>
+
+        <div class="list-card" style="opacity:0.6;">
+          <div>
+            <h3>Online business operations</h3>
+            <span>Closed to new clients</span>
+          </div>
+        </div>
     </div>
   </div>
 
   <!-- Achievements -->
 <!--
   <div class="container cards">
-    
+
     <div class="card">
       <div class="skill-level">
         <span>+</span>
@@ -70,7 +70,7 @@
       </div>
     </div>
 
-      
+
     <div class="card">
       <div class="skill-level">
         <h2>50</h2>
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-      
+
     <div class="card">
       <div class="skill-level">
         <h2>30</h2>
@@ -115,10 +115,13 @@
 
   <footer class="container">
     <div style="margin-top: 2em;">
-      <span style="opacity: 0.5;">Luke Abbott LLC, a California Limited Liability Company.</span> <a href="mailto:luke@playingbyear.com">Contact</a>
+      <span style="opacity: 0.5;">&copy; <span id="year">2020</span> Luke Abbott LLC, a California Limited Liability Company</span>
     </div>
   </footer>
 
+  <script>
+    document.getElementById("year").innerHTML = (new Date()).getFullYear();
+  </script>
 
 </body>
 </html>
